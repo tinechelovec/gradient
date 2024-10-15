@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            background-color: gray;
+        }
+        .container{
+            background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        .navigation{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            position: fixed;
+            top:20px;
+            left: 20px;
+            background-color: gray;
+            padding: 6px;
+            border-radius: 6px;
+            z-index: 9;
+        }
+        .navigation__item{
+            cursor: pointer;
+            border-bottom: 2px solid #0000;
+            height: 100px;
+        }
+        .navigation__item_outline{
+            border-radius: 22px;
+            border: 2px solid #0000;
+            padding: 6px;
+        }
+        .popup{
+            border: 2px solid #0000;
+            border-radius: 12px;
+            min-width: 600px;
+            min-height: 400px;
+            max-width: 1100 px;
+            max-height: 600px;
+            position: absolute;
+            top:300px;
+            left: 400px;
+            width: 100px;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 6;
+        }
+        .popup__content{
+            border: 1px dashed #0000;
+            width: 80%;
+            min-height: 400px;
+            max-height: 600px;
+            text-align: center;
+        }
+        .popup__contetn-title{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 40px 0;
+        }
+        .popup__content-subtitle{
+            font-style: 12px ;
+            font-weight: lighter;
+        }
+        .popup-cross{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .popup-cross-hover{
+            color: chocolate;
+        }
+        .space{
+            height: 300vh;
+        }
+        .cards{
+            display: flex;
+            gap: 80px;
+            display: flex;
+            gap: 30px  ;
+        }
+        .cards__element{
+            border: 1px solid #000;
+            width: 200px;
+            border-radius: 12px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="navigation__item navigation__item_outline">Меню</div>
+            <div class="navigation__item">О нас</div>
+            <div class="navigation__item">Вход</div>
+            <div class="navigation__item">Регистрация</div>
+        </div>
+        <div class="popup">
+            <div class="popup__content">
+                <div class="popup__content-title">
+                    Добро пожаловать
+                </div>
+                <div class="popup__content-subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis magnam quam voluptatibus alias nemo officiis ratione, ut commodi maxime dolorem esse vel vero nobis pariatur laborum, cumque nulla consectetur.
+                </div>
+            </div>
+            <div class="popu-cross">
+                x
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="cards">
+            <div class="cards__element">
+                <div class="cards__element-title">1</div>
+            </div>
+            <div class="cards__element">
+                <div class="cards__element-title">2</div>
+            </div>
+            <div class="cards__element">
+                <div class="cards__element-title">3</div>
+            </div>
+            <div class="cards__element">
+                <div class="cards__element-title">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
